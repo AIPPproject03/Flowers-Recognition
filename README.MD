@@ -31,29 +31,23 @@ The model uses transfer learning with a DenseNet121 base architecture that was p
 ### Training Results
 
 ```
->>> Training tahap 1 (Feature Extraction)...
-Epoch 1/5: loss: 0.4731 - accuracy: 0.8312 - val_loss: 0.3369 - val_accuracy: 0.8831
-Epoch 2/5: loss: 0.2843 - accuracy: 0.9068 - val_loss: 0.2802 - val_accuracy: 0.9026
-Epoch 3/5: loss: 0.2220 - accuracy: 0.9258 - val_loss: 0.2552 - val_accuracy: 0.9123
-Epoch 4/5: loss: 0.1732 - accuracy: 0.9428 - val_loss: 0.2435 - val_accuracy: 0.9143
-Epoch 5/5: loss: 0.1445 - accuracy: 0.9523 - val_loss: 0.2365 - val_accuracy: 0.9182
-
->>> Fine-tuning (Unfreeze layer akhir)...
-Epoch 1/5: loss: 0.1154 - accuracy: 0.9611 - val_loss: 0.1912 - val_accuracy: 0.9364
-Epoch 2/5: loss: 0.0727 - accuracy: 0.9760 - val_loss: 0.1909 - val_accuracy: 0.9351
-Epoch 3/5: loss: 0.0475 - accuracy: 0.9854 - val_loss: 0.1942 - val_accuracy: 0.9364
+✅ Model selesai dilatih selama 4 epoch
 ```
+
+The model was trained using early stopping to prevent overfitting, which resulted in the training process completing after 4 epochs when validation metrics stopped improving.
 
 ### Classification Report
 
-|              | Precision | Recall | F1-Score | Support |
-| ------------ | --------- | ------ | -------- | ------- |
-| daisy        | 0.94      | 0.95   | 0.94     | 124     |
-| dandelion    | 0.95      | 0.98   | 0.97     | 157     |
-| rose         | 0.92      | 0.93   | 0.92     | 119     |
-| sunflower    | 0.99      | 0.96   | 0.97     | 153     |
-| tulip        | 0.92      | 0.89   | 0.91     | 112     |
-| **Accuracy** |           |        | **0.94** | **665** |
+|                  | Precision | Recall | F1-Score | Support  |
+| ---------------- | --------- | ------ | -------- | -------- |
+| daisy            | 0.83      | 0.86   | 0.84     | 242      |
+| dandelion        | 0.84      | 0.88   | 0.86     | 319      |
+| rose             | 0.80      | 0.81   | 0.81     | 231      |
+| sunflower        | 0.83      | 0.88   | 0.85     | 204      |
+| tulip            | 0.87      | 0.75   | 0.81     | 300      |
+| **Accuracy**     |           |        | **0.83** | **1296** |
+| **Macro Avg**    | 0.83      | 0.84   | 0.83     | 1296     |
+| **Weighted Avg** | 0.84      | 0.83   | 0.83     | 1296     |
 
 ## 📸 Example Predictions
 
