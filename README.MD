@@ -59,11 +59,11 @@ Epoch 3/5: loss: 0.0475 - accuracy: 0.9854 - val_loss: 0.1942 - val_accuracy: 0.
 
 Here are some example predictions from the model:
 
-| Image                                                                                                                                                | Prediction | Confidence |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | ---------- |
-| ![Daisy](https://raw.githubusercontent.com/tensorflow/datasets/master/tensorflow_datasets/image/oxford_flowers102/oxford_flowers102_small_image.png) | Daisy      | 98.7%      |
-| ![Sunflower](https://i.imgur.com/FJqc0YG.jpg)                                                                                                        | Sunflower  | 99.2%      |
-| ![Rose](https://i.imgur.com/tgQ7Bfj.jpg)                                                                                                             | Rose       | 96.5%      |
+| Image                                                                                                                     | Prediction | Confidence |
+| ------------------------------------------------------------------------------------------------------------------------- | ---------- | ---------- |
+| ![Daisy](https://github.com/AIPPproject03/Flowers-Recognition/blob/main/flowers/daisy/10140303196_b88d3d6cec.jpg)         | Daisy      | 98.7%      |
+| ![Sunflower](https://github.com/AIPPproject03/Flowers-Recognition/blob/main/flowers/sunflower/20342824594_9740b7b160.jpg) | Sunflower  | 99.2%      |
+| ![Rose](https://github.com/AIPPproject03/Flowers-Recognition/blob/main/flowers/rose/2065522422_cfdd80044a_n.jpg)          | Rose       | 96.5%      |
 
 ## 🛠️ Project Structure
 
